@@ -1,0 +1,28 @@
+.home-page {
+    .package {
+        margin-top: 20px;
+        border-radius: 15px;
+        padding: 5px 15px;
+        border: solid 1px #C4C4C4;
+        cursor: pointer;
+        &.package-lock {
+            background-color: #C4C4C4;
+        }
+        .package-title {
+            color: #000000;
+            font-size: 12px;
+            margin: 2px 0;
+            font-weight: bold;
+        }
+        .package-text {
+            font-size: 12px;
+            line-height: 14px;
+            color: #309600;
+            margin: 2px 0;
+        }
+        .package-img {
+            max-width: 100%;
+            margin: 8px 0;
+        }
+    }
+}
