@@ -1,10 +1,17 @@
+import { Routes, Route } from "react-router-dom";
+
+import VerticalLayout from "./layouts/vertical/VerticalLayout";
+import Home from "./views/home/Home.jsx";
+
 import './App.scss'
 
 function App() {
   return (
-    <>
-      <h1>Hello, world!</h1>
-    </>
+    <VerticalLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+      </Routes>
+    </VerticalLayout>
   )
 }
 
