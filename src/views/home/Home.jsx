@@ -1,6 +1,8 @@
 import { Container, Row, Col, Card, Button } from "react-bootstrap";
 import { chunk } from "lodash";
 import Packages from "./Packages";
+import MenuHome from "./MenuHome";
+import Banner from "./Banner";
 
 const title = "Task List";
 const packages = [
@@ -65,32 +67,8 @@ const listPackages = chunk(packages, 3);
 const Home = () => {
   return (
     <Container>
-      <Row align="center">
-        <Col>
-          <Card>
-            <Card.Img src="https://cdn.pixabay.com/photo/2017/01/10/03/54/icon-1968239_960_720.png" />
-            <Card.Text>Info</Card.Text>
-          </Card>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Img src="https://img.icons8.com/color/2x/restart--v1.png" />
-            <Card.Text>Reca</Card.Text>
-          </Card>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Img src="https://img.icons8.com/color/2x/external-link.png" />
-            <Card.Text>Reti</Card.Text>
-          </Card>
-        </Col>
-        <Col>
-          <Card>
-            <Card.Img src="https://i2.wp.com/www.alicanteturismo.com/wp-content/uploads/2021/02/ICONO-REGALO.png?fit=500%2C500&ssl=1" />
-            <Card.Text>Invi</Card.Text>
-          </Card>
-        </Col>
-      </Row>
+      <Banner />
+      <MenuHome />
 
       <Row>
         <Col>
