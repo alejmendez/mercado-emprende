@@ -38,11 +38,8 @@ const Footer = () => {
     <div className="footer">
       <Navbar bg="light" fixed="bottom">
         {menu.map((ele) => (
-          <Col className="footer-menu-element text-center" xs="3">
-            <Link
-              to={ele.to}
-              key={ele.to}
-            >
+          <Col key={ele.to} className="footer-menu-element text-center" xs="3">
+            <Link to={ele.to}>
               <div className="footer-icon">{ele.icon}</div>
               <div className="footer-title">{ele.title}</div>
             </Link>

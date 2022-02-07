@@ -4,33 +4,33 @@ import { Link } from "react-router-dom";
 
 const menuList = [
   {
-    to: '/',
-    key: 'home',
-    text: 'Inicio',
+    to: "/",
+    key: "home",
+    text: "Inicio",
   },
   {
-    to: '/info',
-    key: 'info',
-    text: 'Información',
+    to: "/info",
+    key: "info",
+    text: "Información",
   },
   {
-    to: '/recharge',
-    key: 'recharge',
-    text: 'Recarga',
+    to: "/recharge",
+    key: "recharge",
+    text: "Recarga",
   },
   {
-    to: '/withdraw',
-    key: 'withdraw',
-    text: 'Retirar',
+    to: "/withdraw",
+    key: "withdraw",
+    text: "Retirar",
   },
   {
-    to: '/invite',
-    key: 'invite',
-    text: 'Invitar',
+    to: "/invite",
+    key: "invite",
+    text: "Invitar",
   },
 ];
 
-const title = 'Menú';
+const title = "Menú";
 
 const Header = () => {
   const [name, setName] = useState("John Doe");
@@ -52,12 +52,8 @@ const Header = () => {
             </Offcanvas.Header>
             <Offcanvas.Body>
               <Nav className="justify-content-end flex-grow-1 pe-3">
-                {menuList.map(({to, key, text}) => (
-                  <Link
-                    className="nav-link"
-                    to={to}
-                    key={key}
-                  >
+                {menuList.map(({ to, key, text }) => (
+                  <Link className="nav-link" to={to} key={key}>
                     {text}
                   </Link>
                 ))}
