@@ -1,3 +1,5 @@
+import { dateToString } from "../../utils/date";
+
 import "./CompletedTask.scss";
 
 const CompletedTask = (props) => {
@@ -12,9 +14,7 @@ const CompletedTask = (props) => {
     commission,
     amountOnAccount,
   } = props.task;
-  const dateFormatted = `${new Date(date).toLocaleDateString()} ${new Date(
-    date
-  ).toLocaleTimeString()}`;
+  const dateFormatted = dateToString(date);
   return (
     <div className="task-item clearfix">
       <div className="task-item-date">Date: {dateFormatted}</div>

@@ -1,3 +1,16 @@
 .withdrawal-request-page {
+  .withdrawal-request {
+    padding: 10px;
+    border-top: 1px solid #222;
 
+    .processing {
+      color: #093E8D;
+    }
+    .cancelled {
+      color: #FF0000;
+    }
+    .successful {
+      color: #07BC2F;
+    }
+  }
 }

@@ -62,11 +62,6 @@ const Profile = () => {
     navigate(`/recharge/${quantity}`);
   };
 
-  const handleQuantity = (e) => {
-    let value = e.target.value;
-
-    setQuantity(value);
-  };
   return (
     <Container className="profile-page">
       <Back />
