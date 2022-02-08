@@ -12,7 +12,9 @@ const CompletedTask = (props) => {
     commission,
     amountOnAccount,
   } = props.task;
-  const dateFormatted = `${new Date(date).toLocaleDateString()} ${new Date(date).toLocaleTimeString()}`;
+  const dateFormatted = `${new Date(date).toLocaleDateString()} ${new Date(
+    date
+  ).toLocaleTimeString()}`;
   return (
     <div className="task-item clearfix">
       <div className="task-item-date">Date: {dateFormatted}</div>

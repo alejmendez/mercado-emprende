@@ -1,6 +1,6 @@
 .profile-page {
   .profile-balance {
-    background: #5ABDDC;
+    background: #5abddc;
     padding: 15px;
     color: #fff;
     font-size: 1.4rem;
@@ -21,30 +21,29 @@
     margin: 10px 0;
     cursor: pointer;
 
-    &>div {
+    & > div {
       border-radius: 15px;
       padding: 20px;
       width: 100%;
     }
 
     .btn-information {
-      background-color: #77EDB5;
+      background-color: #77edb5;
     }
     .btn-completed-tasks {
-      background-color: #88ED77;
+      background-color: #88ed77;
     }
     .btn-my-earnings {
-      background-color: #DCED77;
+      background-color: #dced77;
     }
     .btn-recharge-requests {
-      background-color: #ED77A9;
+      background-color: #ed77a9;
     }
     .btn-withdrawal-requests {
-      background-color: #EDCC77;
+      background-color: #edcc77;
     }
     .btn-invitation {
-      background-color: #EDCC77;
+      background-color: #edcc77;
     }
-
   }
 }

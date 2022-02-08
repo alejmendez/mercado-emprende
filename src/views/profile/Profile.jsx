@@ -3,7 +3,14 @@ import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
 import Back from "../../components/back/Back";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faInfo, faTasks, faBriefcase, faHistory, faMoneyBillAlt, faGift } from "@fortawesome/free-solid-svg-icons";
+import {
+  faInfo,
+  faTasks,
+  faBriefcase,
+  faHistory,
+  faMoneyBillAlt,
+  faGift,
+} from "@fortawesome/free-solid-svg-icons";
 import { Link } from "react-router-dom";
 
 import "./Profile.scss";
@@ -93,9 +100,7 @@ const Profile = () => {
           <Col xs="4" key={item.title} title={item.title}>
             <Link to={item.to}>
               <div className="btn-profile-actions text-center">
-                <div className={item.className}>
-                  {item.icon}
-                </div>
+                <div className={item.className}>{item.icon}</div>
                 {item.title}
               </div>
             </Link>

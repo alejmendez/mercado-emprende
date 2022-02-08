@@ -47,7 +47,11 @@ const Recharge = () => {
       </Row>
       <Row>
         <Col className="text-center">
-          <Button className="btn-recharge" variant="success" onClick={handleClick}>
+          <Button
+            className="btn-recharge"
+            variant="success"
+            onClick={handleClick}
+          >
             Confirm
           </Button>
         </Col>
