@@ -1,0 +1,45 @@
+.profile-page {
+  .profile-balance {
+    background: #5ABDDC;
+    padding: 15px;
+    color: #fff;
+    font-size: 1.4rem;
+    line-height: 1em;
+
+    .btn-recharge {
+      width: 45%;
+    }
+  }
+
+  .btn-profile-actions {
+    width: 100%;
+    margin: 10px 0;
+    cursor: pointer;
+
+    &>div {
+      border-radius: 15px;
+      padding: 20px;
+      width: 100%;
+    }
+
+    .btn-information {
+      background-color: #77EDB5;
+    }
+    .btn-completed-tasks {
+      background-color: #88ED77;
+    }
+    .btn-my-earnings {
+      background-color: #DCED77;
+    }
+    .btn-recharge-requests {
+      background-color: #ED77A9;
+    }
+    .btn-withdrawal-requests {
+      background-color: #EDCC77;
+    }
+    .btn-invitation {
+      background-color: #EDCC77;
+    }
+
+  }
+}

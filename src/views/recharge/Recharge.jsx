@@ -1,6 +1,7 @@
 import { useState } from "react";
 import { Container, Row, Col, Button, Form } from "react-bootstrap";
 import { useNavigate } from "react-router-dom";
+import Back from "../../components/back/Back";
 
 import "./Recharge.scss";
 
@@ -13,10 +14,14 @@ const Recharge = () => {
   };
 
   const handleQuantity = (e) => {
-    setQuantity(e.target.value);
+    let value = e.target.value;
+
+    setQuantity(value);
   };
   return (
     <Container className="recharge-page">
+      <Back />
+
       <Row>
         <Col>
           <h2 className="title-home">
@@ -30,9 +35,11 @@ const Recharge = () => {
             <Form.Group className="mb-3" controlId="Quantity">
               <Form.Label>Quantity</Form.Label>
               <Form.Control
-                type="text"
+                type="number"
                 placeholder="Enter the amount to send"
+                pattern="^[0-9]\d*\.?\d*$"
                 onChange={handleQuantity}
+                value={quantity}
               />
             </Form.Group>
           </Form>
@@ -40,7 +47,7 @@ const Recharge = () => {
       </Row>
       <Row>
         <Col className="text-center">
-          <Button variant="success" onClick={handleClick}>
+          <Button className="btn-recharge" variant="success" onClick={handleClick}>
             Confirm
           </Button>
         </Col>

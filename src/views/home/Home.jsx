@@ -3,7 +3,7 @@ import Packages from "./Packages";
 import MenuHome from "./MenuHome";
 import Banner from "./Banner";
 import "./Home.scss";
-import getTasks from "../../query/getTasks";
+import getTasks from "../../services/getTasks";
 
 const title = "Task Area";
 const tasks = getTasks();
