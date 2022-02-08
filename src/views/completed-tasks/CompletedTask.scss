@@ -1,0 +1,26 @@
+.completed-tasks-page {
+  .task-item {
+    .task-item-image {
+      width: 40%;
+      float: left;
+      img {
+        width: 100%;
+      }
+    }
+    .task-item-description {
+      width: 60%;
+      background: #BFCCD1;
+      float: right;
+      margin-top: 20px;
+      padding: 10px;
+    }
+
+    .task-item-amount-on-account {
+      span {
+        color: #309600;
+        font-size: 1.2rem;
+        font-weight: bold;
+      }
+    }
+  }
+}
