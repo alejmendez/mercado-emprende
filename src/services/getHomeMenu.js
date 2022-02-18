@@ -21,7 +21,7 @@ const menuList = [
     title: "Retirar",
   },
   {
-    to: "/invite",
+    to: "/invitation",
     key: "invite",
     img: "https://i2.wp.com/www.alicanteturismo.com/wp-content/uploads/2021/02/ICONO-REGALO.png?fit=500%2C500&ssl=1",
     text: "Invi",

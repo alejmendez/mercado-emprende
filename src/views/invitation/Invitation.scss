@@ -1,3 +1,17 @@
 .invitation-page {
-
+  .banner {
+    max-width: 100%;
+  }
+  .commission {
+    margin-top: 20px;
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+  .input-group-text {
+    cursor: pointer;
+  }
+  .btn-go-back {
+    width: 60%;
+    font-size: 1.4em;
+  }
 }

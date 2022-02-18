@@ -24,7 +24,7 @@ const menuList = [
     text: "Retirar",
   },
   {
-    to: "/invite",
+    to: "/invitation",
     key: "invite",
     text: "Invitar",
   },
