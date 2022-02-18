@@ -1,5 +1,4 @@
 import { Container, Row, Col, Pagination } from "react-bootstrap";
-import { useNavigate } from "react-router-dom";
 import Back from "../../components/back/Back";
 import CompletedTask from "./CompletedTask";
 import getCompletedTasks from "../../services/getCompletedTasks";
@@ -7,7 +6,6 @@ import getCompletedTasks from "../../services/getCompletedTasks";
 import "./CompletedTasks.scss";
 
 const CompletedTasks = () => {
-  const navigate = useNavigate();
   const completedTasks = getCompletedTasks();
   return (
     <Container className="completed-tasks-page">

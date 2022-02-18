@@ -1,4 +1,3 @@
-import { useState } from "react";
 import {
   Container,
   Row,
@@ -39,11 +38,6 @@ const RechargeTransaction = () => {
     navigate("/");
   };
 
-  const handleQuantity = (e) => {
-    let value = e.target.value;
-
-    setQuantity(value);
-  };
   return (
     <Container className="recharge-transaction-page">
       <Back />

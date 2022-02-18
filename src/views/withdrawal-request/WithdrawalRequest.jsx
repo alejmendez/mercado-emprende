@@ -21,7 +21,7 @@ const WithdrawalRequest = () => {
       </Row>
       <Row>
         <Col>
-          {rechargeRequests.map((recharge) => (
+          {withdrawalRequests.map((recharge) => (
             <div className="withdrawal-request" key={recharge.id}>
               <div className="withdrawal-request-date">{dateToString(recharge.date)}</div>
               <div className="withdrawal-request-content">
