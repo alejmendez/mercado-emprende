@@ -60,7 +60,7 @@ const RechargeTransaction = () => {
               <FormControl
                 aria-label="transactionAccount"
                 aria-describedby="basic-addon1"
-                value={transactionAccount}
+                defaultValue={transactionAccount}
               />
             </InputGroup>
           </Form>

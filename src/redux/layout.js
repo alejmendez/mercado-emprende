@@ -2,7 +2,7 @@
 import { createSlice } from '@reduxjs/toolkit'
 
 // ** ThemeConfig Import
-import themeConfig from '@configs/themeConfig'
+import themeConfig from '../configs/themeConfig'
 
 export const layoutSlice = createSlice({
   name: 'layout',

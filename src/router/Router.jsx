@@ -1,6 +1,13 @@
 import { Routes, Route } from "react-router-dom";
 
+import VerticalLayout from "../layouts/vertical/VerticalLayout";
+
 import Home from "../views/home/Home";
+
+import Login from "../views/login/Login";
+import Register from "../views/register/Register";
+import Terms from "../views/terms/Terms";
+
 import Recharge from "../views/recharge/Recharge";
 import RechargeTransaction from "../views/recharge/RechargeTransaction";
 import Profile from "../views/profile/Profile";
@@ -17,21 +24,26 @@ import Error from "../views/Error";
 
 const Router = () => {
   return (
-    <Routes>
-      <Route path="/" element={<Home />} />
-      <Route path="/recharge" element={<Recharge />} />
-      <Route path="/recharge/:quantity" element={<RechargeTransaction />} />
-      <Route path="/profile" element={<Profile />} />
-      <Route path="/completed-tasks" element={<CompletedTasks />} />
-      <Route path="/my-earnings" element={<MyEarnings />} />
-      <Route path="/recharge-requests" element={<RechargeRequests />} />
-      <Route path="/withdrawal-requests" element={<WithdrawalRequest />} />
-      <Route path="/task" element={<Task />} />
-      <Route path="/invitation" element={<Invitation />} />
-      <Route path="/information" element={<Information />} />
-      <Route path='/NotAuthorized' component={<NotAuthorized />} />
-      <Route path='*' component={<Error />} />
-    </Routes>
+    <VerticalLayout>
+      <Routes>
+        <Route path="/" element={<Home />} />
+        <Route path="/login" element={<Login />} />
+        <Route path="/register" element={<Register />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/recharge" element={<Recharge />} />
+        <Route path="/recharge/:quantity" element={<RechargeTransaction />} />
+        <Route path="/profile" element={<Profile />} />
+        <Route path="/completed-tasks" element={<CompletedTasks />} />
+        <Route path="/my-earnings" element={<MyEarnings />} />
+        <Route path="/recharge-requests" element={<RechargeRequests />} />
+        <Route path="/withdrawal-requests" element={<WithdrawalRequest />} />
+        <Route path="/task" element={<Task />} />
+        <Route path="/invitation" element={<Invitation />} />
+        <Route path="/information" element={<Information />} />
+        <Route path='/NotAuthorized' component={<NotAuthorized />} />
+        <Route path='*' component={<Error />} />
+      </Routes>
+    </VerticalLayout>
   );
 }
 

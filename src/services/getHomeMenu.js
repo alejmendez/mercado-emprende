@@ -14,7 +14,7 @@ const menuList = [
     title: "Recarga",
   },
   {
-    to: "/withdraw",
+    to: "/withdrawal-requests",
     key: "withdraw",
     img: "https://img.icons8.com/color/2x/external-link.png",
     text: "Reti",

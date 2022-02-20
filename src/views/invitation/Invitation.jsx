@@ -56,7 +56,7 @@ const Invitation = () => {
               <FormControl
                 aria-label="transactionAccount"
                 aria-describedby="basic-addon1"
-                value={invitationLink}
+                defaultValue={invitationLink}
               />
             </InputGroup>
           </Form>
